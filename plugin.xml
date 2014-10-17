@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="org.apache.cordova.Plugins"
+    version="1.0.0">
+
+    <name>NFCTag eCard Plugin</name>
+  <author>Michael Bowman</author>
+
+  <description>
+    This plugin allows you to read information of credit card with NFCTag chip
+  </description>
+
+  <license>MIT</license>
+
+  <js-module src="www/pluigin.js" name="NFCPlugin">
+      <clobbers target="NFCPlugin" />
+  </js-module>
+
+  <engines>
+      <engine name="cordova" version="&gt;=3.0.0" />
+  </engines>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="NFCPlugin" >
+        <param name="android-package" value="org.apache.cordova.Plugins"/>
+      </feature>
+        </config-file>
+
+        <source-file src="src/android/Provider.java"
+                target-dir="src/org/apache/cordova/Plugins" />
+        <source-file src="src/android/NFCPlugin.java"
+                target-dir="src/org/apache/cordova/Plugins" />
+        <source-file src="src/android/library-2.0.0.jar"
+                target-dir="libs" />
+        <source-file src="src/android/slf4j-api-1.7.7.jar"
+                target-dir="libs" />
+        <source-file src="src/android/bit-lib4j-1.4.10.jar"
+                target-dir="libs" />
+        <source-file src="src/android/common-lang3.jar"
+                target-dir="libs" />
+    </platform>
+
+</plugin>
