@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.cordova.*; // Cordova 3.x
-import org.apache.cordova.api.*;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
