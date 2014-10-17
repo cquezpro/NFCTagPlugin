@@ -14,7 +14,7 @@
   <license>MIT</license>
 
   <js-module src="www/pluigin.js" name="NFCPlugin">
-      
+      <clobbers target="org.apache.cordova.Plugins" />
   </js-module>
 
   <engines>
@@ -23,9 +23,9 @@
 
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-      <feature name="NFCPlugin" >
-        <param name="android-package" value="org.apache.cordova.Plugins"/>
-      </feature>
+		  <feature name="NFCPlugin" >
+			<param name="android-package" value="org.apache.cordova.Plugins"/>
+		  </feature>
         </config-file>
 
         <source-file src="src/android/Provider.java"
