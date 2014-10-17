@@ -34,7 +34,7 @@
                 target-dir="src/org/apache/cordova/Plugins" />
 		
 		<!-- kludge for 2.9 support -->
-        <source-file src="src/android/org/apache/cordova/api/Dummy.java"
+        <source-file src="src/android/Dummy.java"
             target-dir="src/org/apache/cordova/api"/>
 
         <source-file src="src/android/library-2.0.0.jar"
