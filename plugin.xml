@@ -14,7 +14,7 @@
   <license>MIT</license>
 
   <js-module src="www/pluigin.js" name="NFCPlugin">
-      <clobbers target="NFCPlugin" />
+      
   </js-module>
 
   <engines>
