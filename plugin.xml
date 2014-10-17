@@ -13,7 +13,7 @@
 
   <license>MIT</license>
 
-  <js-module src="www/pluigin.js" name="NFCPlugin">
+  <js-module src="www/plugin.js" name="NFCPlugin">
       <clobbers target="org.apache.cordova.Plugins" />
   </js-module>
 
