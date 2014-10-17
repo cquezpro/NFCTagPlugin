@@ -52,9 +52,4 @@
             <uses-feature android:name="android.hardware.nfc" android:required="true"/>
         </config-file>
 
-    <uses-feature
-        android:name="android.hardware.nfc"
-        android:required="true" />
-    </platform>
-
 </plugin>
