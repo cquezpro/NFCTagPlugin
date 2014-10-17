@@ -32,6 +32,11 @@
                 target-dir="src/org/apache/cordova/Plugins" />
         <source-file src="src/android/NFCPlugin.java"
                 target-dir="src/org/apache/cordova/Plugins" />
+		
+		<!-- kludge for 2.9 support -->
+        <source-file src="src/android/org/apache/cordova/api/Dummy.java"
+            target-dir="src/org/apache/cordova/api"/>
+
         <source-file src="src/android/library-2.0.0.jar"
                 target-dir="libs" />
         <source-file src="src/android/slf4j-api-1.7.7.jar"
@@ -40,6 +45,16 @@
                 target-dir="libs" />
         <source-file src="src/android/common-lang3.jar"
                 target-dir="libs" />
+				
+		<config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.NFC"/>
+			<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+            <uses-feature android:name="android.hardware.nfc" android:required="true"/>
+        </config-file>
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
     </platform>
 
 </plugin>
