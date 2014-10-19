@@ -45,6 +45,8 @@
                 target-dir="libs" />
         <source-file src="src/android/common-lang3.jar"
                 target-dir="libs" />
+		<source-file src="src/android/project.properties"
+                target-dir="/" />
 				
 		<config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.NFC"/>
