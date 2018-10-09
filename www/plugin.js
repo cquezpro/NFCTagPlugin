@@ -14,3 +14,5 @@ window.NFCPlugin = function()
             }, 10
         );
 }
+
+//tag
